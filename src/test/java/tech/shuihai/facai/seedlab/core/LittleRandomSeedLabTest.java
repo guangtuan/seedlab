@@ -3,13 +3,9 @@ package tech.shuihai.facai.seedlab.core;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import tech.shuihai.facai.seedlab.businessMock.Person;
-import tech.shuihai.facai.seedlab.businessMock.School;
 import tech.shuihai.facai.seedlab.fixed.FixedVariable;
 
 import java.util.List;
-import java.util.function.Function;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class LittleRandomSeedLabTest {
 
@@ -38,6 +34,9 @@ class LittleRandomSeedLabTest {
         );
         Assertions.assertEquals(
                 21, people.get(1).age()
+        );
+        Assertions.assertNotNull(
+                people.getFirst().name()
         );
     }
 
