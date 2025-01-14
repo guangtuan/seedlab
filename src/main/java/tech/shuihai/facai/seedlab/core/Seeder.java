@@ -15,6 +15,21 @@ public class Seeder {
         if (Integer.class.equals(type)) {
             return (T) (Integer.valueOf(random.nextInt(Integer.MAX_VALUE)));
         }
+        if (Double.class.equals(type)) {
+            return (T) (Double.valueOf(random.nextDouble()));
+        }
+        if (Float.class.equals(type)) {
+            return (T) (Float.valueOf(random.nextFloat()));
+        }
+        if (Long.class.equals(type)) {
+            return (T) (Long.valueOf(random.nextLong()));
+        }
+        if (Byte.class.equals(type)) {
+            return (T) (Byte.valueOf((byte) random.nextInt(Byte.MAX_VALUE)));
+        }
+        if (Short.class.equals(type)) {
+            return (T) (Short.valueOf((short) random.nextInt(Short.MAX_VALUE)));
+        }
         if (Boolean.class.equals(type)) {
             return (T) (Boolean.valueOf(random.nextBoolean()));
         }
